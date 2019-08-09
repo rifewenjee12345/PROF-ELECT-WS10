@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Material</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <!-- Material Font -->
+    <link rel="stylesheet" href="./assets/css/material-font.css">
+    <!-- Mobile Support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="background-image: url(./assets/img/back.jpg)">
+        
+           
+    <nav>
+      <div class="nav-wrapper" style="background-color: #212121 ">
+        <a href="#" class="brand-logo">My Website</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Log in</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <div class="container" style="background-color:azure ; padding: 50px">
+
+
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <div id="introduction">
+              
+              <div class="row">
+                  <div class="col s6">
+                      <a href=><img style= "height: 300px; width: 300px" class="circle" src="./assets/img/pic.jpg"></a>
+                  </div>
+                  <div class="col s5" style="font-size: 16px">
+                      <h4><em><strong>WEN JEE LUMAYOG RIFE </strong> </em> </h4>
+                      <hr>
+                     
+                     <em>Birthdate:</em> <strong>August 22, 1999</strong>  <br>
+                     <em>Father's Name:</em> <strong>Wenceslao M. Rife </strong> <br>
+                     <em>Mother's Name:</em> <strong>Jocelyn L. Rife</strong>  <br>
+                     <em>Street/Brgy.:</em> <strong>Purok-5, Brgy. Murallon</strong>  <br>
+                     <em>City:</em> <strong>Gingoog City, 9014 </strong> <br>
+                     <em>Province:</em> <strong>Misamis Oriental</strong>  <br>
+                     <em>Country:</em> <strong>Philippines</strong> 
+                     <hr>
+                  </div>
+                 
+                </div>
+          </div>
+    
+          <div id="initialization" class="section scrollspy">
+            <h4>Educational Attainment</h4>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">local_library</i>Elementary</div>
+                <div class="collapsible-body"><span>
+                
+                  <strong><h5>Grace Christian School</h5> </strong>
+                  <em>Rodriguez St. Gingoog City</em> <br>
+                  <em>2002-2005</em> <br>
+
+                  <strong><h5>Murallon Integrated School</h5> </strong>
+                  <em>Purok-4 Brgy. Murallon, Gingoog City</em> <br>
+                  <em>2005-2011</em> <br></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">school</i>Secondary</div>
+                <div class="collapsible-body"><span>
+                    <strong><h5>Gingoog City Colleges</h5> </strong>
+                    <em>Brgy. 24-A Paz Village, Gingoog City</em> <br>
+                    <em>2011-2015</em> <br>
+                </span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">book</i>Tertiary</div>
+                <div class="collapsible-body"><span>
+                   
+
+                    <strong><h5>Gingoog City Colleges</h5> </strong>
+                    <strong>Bachelor of Science in Information Technology</strong> <br>
+                    <em>Brgy. 24-A Paz Village, Gingoog City</em> <br>
+                    <em>2015-2020</em> <br>
+                </span></div>
+              </li>
+            </ul>
+          </div>
+            
+      <div class="row">
+            <div class="col s12 m9 l10">
+              <div id="introduction" class="section scrollspy" style="font-size: 24px">
+                <h1>FAVORITES</h1> 
+                Favorite food:  Hotdog    <br>
+                Favorite color: Blue    <br>
+                Favorite pet:  Dog     <br>
+                Favorite movie: Titanic
+
+              </div>
+        
+             
+            
+          </div>
+    </div>
+    
+    <!-- Material JS -->
+    <script src="./assets/js/materialize.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems);
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    </script>
+</body>
+</html>
